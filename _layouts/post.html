@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/blog-style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo">
+            <a href="{{ site.baseurl }}">{{ site.title }}</a>
+        </div>
+        <nav>
+            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="blog-post">
+            <h1>{{ page.title }}</h1>
+            <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
+            <div class="post-content">
+                {{ content | split: '___' | custom_div_generator }}
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    </footer>
+</body>
+</html>
