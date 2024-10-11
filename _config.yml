@@ -34,8 +34,9 @@ title: "Cloud Intelligence Blog"
 description: "A blog showcasing thoughts, projects, and updates from the Cloud Intelligence team"
 markdown: kramdown
 theme: none
-baseurl: "https://masterdipp5.github.io"
-url: "/CI-Blog"
+url: "https://masterdipp5.github.io"
+baseurl: "/CI-Blog"
+
 
 >>>>>>> c8e0307 (Initial commit of Jekyll blog)
 
