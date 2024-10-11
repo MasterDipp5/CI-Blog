@@ -22,7 +22,7 @@ title: "Cloud Intelligence Blog"
 description: "A blog showcasing thoughts, projects, and updates from the Cloud Intelligence team"
 markdown: kramdown
 theme: none
-baseurl: ""
+baseurl: "https://MasterDipp5.github.io/CI-Blog.git"
 url: "https://MasterDipp5.github.io/CI-Blog.git"
 
 
